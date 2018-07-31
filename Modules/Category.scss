@@ -66,10 +66,12 @@
                 z-index: 1;
                 padding:20px 40px 40px 40px; 
                 display: none;
-                    li{
-                        display: inline-block;
-                        vertical-align: top;
-                        width: 50%;
+                > li{
+                    display: inline-block;
+                    vertical-align: top;
+                    width: 50%;
+                }
+                li{
                     a{
                         display: inline-block;
                         vertical-align: middle;
@@ -92,7 +94,7 @@
                         }
                     }
                     &.act{
-                        a{
+                        a.active{
                             &:before{
                                 background: $lDark;
                                 border-color: $lDark;
@@ -100,7 +102,7 @@
                         }
                     }
                 }
-             }
+            }
         }
     }
 }
@@ -166,6 +168,8 @@
             width: 100%;
             > li{
                 display: block;
+                margin-top: 10px;
+                &:first-child{margin-top: 0;}
                 > b{height: 60px;}
                 > a{
                     display: block;

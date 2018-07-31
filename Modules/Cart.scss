@@ -375,6 +375,9 @@
 
     .no-prd {
         text-align: center;
+        @media screen and (min-width: 850px){
+            margin-top: 50px;
+        }
         .no-prd-header{
             position: fixed;
             top: 0;
@@ -382,6 +385,7 @@
             width: 100%;
             padding: 30px 0 29px 0;
             border-bottom:1px solid $border;
+            background: #fff;
         }
         .icon-bag {
             width: 65px;
@@ -2740,15 +2744,11 @@
     .ems-page-cart .cart-section-right .ems-clone-cart-notify{display: none;}
 
     .page-cart-empty-layout{
-        .ems-page-order-cart span[id$="lbfSPT_SEPETBOS"]{
-            height: calc(100vh - 250px);
-            position: absolute;
-            width: 100%;
-            left: 0;
-            top: 50px;
-        }
-        .ems-page-cart-step0 .ems-pay-info {padding-top: 20px; border-top: none;}
+        .ems-page-cart .ems-page-order-cart{display: block;}
+        .ems-page-order-cart span[id$="lbfSPT_SEPETBOS"]{ display: inherit; vertical-align: top; }
+        .ems-page-cart-step0 .ems-pay-info {padding-top: 20px; border-top: none; position: relative; bottom: inherit; left: inherit;}
         .ems-page-cart-step0 .ems-pay-info .swiper-slide{width: 200px;}
+
     }
 
     .ems-cart-layout-success .ems-page-cart-colmn-1-top{display: none;}
@@ -2827,7 +2827,7 @@
         }
 
         .no-prd{
-            padding: 50px 15px 20px 15px;
+            padding: 80px 15px 20px 15px;
             .no-prd-header{
                 min-height: 50px;
                 padding-top: 16px;
