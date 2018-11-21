@@ -15092,7 +15092,7 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
 ul.emosInfinite .ems-prd {
   width: 25%;
   min-height: 100px;
-  margin-top: 10px;
+  margin-top: 5px;
   padding: 5px 12px; }
   ul.emosInfinite .ems-prd-inner {
     position: relative;
@@ -15184,8 +15184,8 @@ ul.emosInfinite .ems-prd {
     padding: 10px 5px 0 5px; }
     ul.emosInfinite .ems-prd-content-mask {
       overflow: hidden;
-      min-height: 95px;
-      max-height: 95px;
+      min-height: 105px;
+      max-height: 105px;
       text-align: center; }
   ul.emosInfinite .ems-prd-name {
     margin-bottom: 5px;
@@ -15333,7 +15333,7 @@ ul.emosInfinite .ems-prd {
       visibility: visible;
       overflow: visible; } }
 
-.esarp-categorie ul.emosInfinite .ems-prd-group {
+.esarp-categorie ul.emosInfinite .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd-group {
   opacity: 0;
   height: auto;
   overflow: visible;
@@ -15342,12 +15342,16 @@ ul.emosInfinite .ems-prd {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s; }
 
-.esarp-categorie ul.emosInfinite .ems-prd-color-info {
+.esarp-categorie ul.emosInfinite .ems-prd-color-info, .outlet-categorie ul.emosInfinite .ems-prd-color-info {
   opacity: 1;
   visibility: visible; }
 
-.esarp-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group {
+.esarp-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group {
   opacity: 1; }
+
+.esarp-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner, .outlet-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner {
+  opacity: 1;
+  visibility: visible; }
 
 .product-empty {
   margin: 0 auto; }

@@ -314,7 +314,7 @@ ul.emosInfinite {
     .ems-prd {
         width: 25%;
         min-height: 100px;
-        margin-top: 10px;
+        margin-top: 5px;
         padding: 5px 12px;
         &-inner{
             position: relative;
@@ -348,9 +348,7 @@ ul.emosInfinite {
                     font-size: 14px;
                     color: #a2a5ac;
                 }
-                &:empty{
-                    display: none;
-                }
+                &:empty{display: none; }
             }
         }
         &-icons{
@@ -429,8 +427,8 @@ ul.emosInfinite {
             padding: 10px 5px 0 5px;
             &-mask{
                 overflow: hidden;
-                min-height: 95px;
-                max-height: 95px;
+                min-height: 105px;
+                max-height: 105px;
                 text-align: center;
             }    
         }
@@ -599,7 +597,7 @@ ul.emosInfinite {
     }
 }
 
-.esarp-categorie{
+.esarp-categorie, .outlet-categorie{
     ul.emosInfinite{
         .ems-prd{
             &-group{
@@ -614,9 +612,11 @@ ul.emosInfinite {
                 visibility: visible;
             }
             &:hover{
-                .ems-prd-group{
-                    opacity: 1;
-                }
+                .ems-prd-group{ opacity: 1; }
+            }
+            .ems-prd-group-inner{
+                opacity: 1;
+                visibility: visible;
             }
         }
     }
