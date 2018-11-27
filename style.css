@@ -3921,9 +3921,9 @@ span.checkbox {
     .swiper-container-default .swiper-slide .swiper-content-inner h1, .swiper-container-default .swiper-slide .swiper-content-inner h2 {
       font-family: "regular"; }
     .swiper-container-default .swiper-slide .swiper-content-inner h1 {
-      color: #0d2048; }
+      color: #000; }
     .swiper-container-default .swiper-slide .swiper-content-inner h2 {
-      color: #171d2f; }
+      color: #000; }
     .swiper-container-default .swiper-slide .swiper-content-inner .swiper-slide-button span {
       display: inline-block;
       padding: 20px;
@@ -4689,12 +4689,14 @@ button.swiper-pagination-bullet {
   .swiper-container-default .swiper-slide.default-layout {
     background-position: top right !important; }
     .swiper-container-default .swiper-slide.default-layout .swiper-content {
-      left: 0; }
+      left: 0;
+      padding-left: 20px; }
   .swiper-container-default .swiper-slide.right-layout {
     background-position: top left !important; }
     .swiper-container-default .swiper-slide.right-layout .swiper-content {
       left: inherit;
-      right: 0; }
+      right: 0;
+      padding-right: 20px; }
   .swiper-container-default .swiper-slide.active-slide .swiper-content {
     opacity: 1;
     -webkit-transform: translateY(-50%);

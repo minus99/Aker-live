@@ -21,8 +21,8 @@
                     h1, h2{
                         font-family:$regular;
                     }   
-                    h1{ color:$darkBlack; }
-                    h2{ color:$lDark; }
+                    h1{ color:#000; }
+                    h2{ color:#000; }
                     .swiper-slide-button{
                         span{
                             display: inline-block;
@@ -904,6 +904,7 @@ button.swiper-pagination-bullet {
                     background-position: top right !important;
                     .swiper-content{
                         left: 0;
+                        padding-left: 20px;
                     }
                 }
                 &.right-layout{
@@ -911,6 +912,7 @@ button.swiper-pagination-bullet {
                     .swiper-content{
                         left: inherit;
                         right: 0;
+                        padding-right: 20px;
                     }
                 }
                 &.active-slide{
