@@ -24,6 +24,33 @@
     @include transition(transform 333ms ease-in-out);
     @include setTransform(translateX(100%));
     will-change: transform;
+    .tavsiyeUrun{
+        .ems-combine-header{
+            padding: 20px 40px 20px 20px;
+            position: relative;
+            border-bottom: 1px solid $border;
+            span{
+                font-family: $medium;
+                font-size: 18px;
+                color: $lDark;
+            }
+            .combine-close-btn{
+                position: absolute;
+                width: 24px;
+                height: 24px;
+                z-index: 1;
+                text-align: center;
+                top: 50%;
+                right: 20px;
+                margin-top: -12px;
+                i{line-height: 24px;}
+                i, i:before{
+                    font-size: 12px;
+                    color: $lDark;
+                }
+            }
+        }
+    }
     > span{
         .ems-combine-header{
             padding: 20px 40px 20px 20px;
@@ -1387,9 +1414,17 @@
                 @include flex();
                 flex-wrap: wrap;
                 align-items: center;
+                &.show-combine{
+                    .ems-combine-btn-wrapper{
+                        display: block;
+                    }
+                }
             }
             .ems-combine-btn-wrapper{
                 display: none;
+                max-width: 100%;
+                -ms-flex-preferred-size: 100%;
+                flex-basis: 100%;
                 .ems-prd-combine-btn{
                     margin-top: 25px;
                     display: block;
@@ -1551,6 +1586,30 @@
                 text-align: center;
                 span{font-size: 14px; color: #fff;}
                 .combine-close-btn{
+                    i, i:before{color: #fff;}
+                }
+            }
+        }
+        .tavsiyeUrun{
+            .ems-combine-header{
+                padding-top: 17px;
+                padding-bottom: 17px;
+                padding-left: 40px;
+                background: $lDark;
+                text-align: center;
+                span{
+                    font-size: 14px;
+                    color: #fff;
+                }
+                .combine-close-btn{
+                    position: absolute;
+                    width: 24px;
+                    height: 24px;
+                    z-index: 1;
+                    text-align: center;
+                    top: 50%;
+                    right: 20px;
+                    margin-top: -12px;
                     i, i:before{color: #fff;}
                 }
             }
@@ -1854,9 +1913,9 @@
                     }
                 }
                 .mobile-element-cart-add{
-                    flex-grow: 2;
-                    flex-shrink: 2;
-                    flex-basis: auto;
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 50%;
                     .close{display: none;}
                 }
                 .urunDetay_btnSepeteAt > table,
@@ -2043,9 +2102,12 @@
                     max-width: inherit;
                     flex-grow: 1;
                     flex-shrink: 1;
-                    flex-basis: auto;
+                    flex-basis: 50%;
                 }
                 .ems-combine-btn-wrapper{
+                    flex-grow: 1;
+                    flex-shrink: 1;
+                    flex-basis: 50%;
                     .ems-prd-combine-btn{margin-top: 0;}
                 }
             }
@@ -2064,6 +2126,9 @@
                 }
             }
         }
+    }
+    body.no-size{
+        .ems-prd-detail .ems-prd-price .urunDetay_btnSepeteAt>table{display: flex !important;}
     }
 
     .mobile-navigation-animate{

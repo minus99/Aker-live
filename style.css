@@ -12906,6 +12906,28 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
   will-change: transform; }
   .ems-combine-product:empty {
     display: none; }
+  .ems-combine-product .tavsiyeUrun .ems-combine-header {
+    padding: 20px 40px 20px 20px;
+    position: relative;
+    border-bottom: 1px solid #e6e7e9; }
+    .ems-combine-product .tavsiyeUrun .ems-combine-header span {
+      font-family: "medium";
+      font-size: 18px;
+      color: #171d2f; }
+    .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn {
+      position: absolute;
+      width: 24px;
+      height: 24px;
+      z-index: 1;
+      text-align: center;
+      top: 50%;
+      right: 20px;
+      margin-top: -12px; }
+      .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn i {
+        line-height: 24px; }
+      .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn i, .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn i:before {
+        font-size: 12px;
+        color: #171d2f; }
   .ems-combine-product > span .ems-combine-header {
     padding: 20px 40px 20px 20px;
     position: relative;
@@ -14164,8 +14186,13 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center; }
+    .ems-prd-detail .ems-prd-add-to-cart-wrapper.show-combine .ems-combine-btn-wrapper {
+      display: block; }
   .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper {
-    display: none; }
+    display: none;
+    max-width: 100%;
+    -ms-flex-preferred-size: 100%;
+    flex-basis: 100%; }
     .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper .ems-prd-combine-btn {
       margin-top: 25px;
       display: block;
@@ -14301,6 +14328,26 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
         color: #fff; }
       .ems-combine-product > span .ems-combine-header .combine-close-btn i, .ems-combine-product > span .ems-combine-header .combine-close-btn i:before {
         color: #fff; }
+    .ems-combine-product .tavsiyeUrun .ems-combine-header {
+      padding-top: 17px;
+      padding-bottom: 17px;
+      padding-left: 40px;
+      background: #171d2f;
+      text-align: center; }
+      .ems-combine-product .tavsiyeUrun .ems-combine-header span {
+        font-size: 14px;
+        color: #fff; }
+      .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn {
+        position: absolute;
+        width: 24px;
+        height: 24px;
+        z-index: 1;
+        text-align: center;
+        top: 50%;
+        right: 20px;
+        margin-top: -12px; }
+        .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn i, .ems-combine-product .tavsiyeUrun .ems-combine-header .combine-close-btn i:before {
+          color: #fff; }
     .ems-combine-product .urnList .ems-prd-list {
       top: 70px;
       width: 100%;
@@ -14584,13 +14631,13 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
         font-size: 12px;
         color: #fff; }
     .ems-prd-detail .ems-prd-price .mobile-element-cart-add {
-      -webkit-box-flex: 2;
-      -ms-flex-positive: 2;
-      flex-grow: 2;
-      -ms-flex-negative: 2;
-      flex-shrink: 2;
-      -ms-flex-preferred-size: auto;
-      flex-basis: auto; }
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
       .ems-prd-detail .ems-prd-price .mobile-element-cart-add .close {
         display: none; }
     .ems-prd-detail .ems-prd-price .urunDetay_btnSepeteAt > table,
@@ -14777,16 +14824,28 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
       flex-grow: 1;
       -ms-flex-negative: 1;
       flex-shrink: 1;
-      -ms-flex-preferred-size: auto;
-      flex-basis: auto; }
-    .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper .ems-prd-combine-btn {
-      margin-top: 0; }
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+    .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper {
+      -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+      flex-grow: 1;
+      -ms-flex-negative: 1;
+      flex-shrink: 1;
+      -ms-flex-preferred-size: 50%;
+      flex-basis: 50%; }
+      .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper .ems-prd-combine-btn {
+        margin-top: 0; }
   .ems-prd-detail.indirimli .ems-prd-size {
     height: calc(100% - 120px); }
   .urunDetay.urunTakim .ems-prd-detail .ems-prd-add-to-cart .ems-combine-btn-wrapper {
     padding-left: 0; }
   .urunDetay.urunTakim .ems-prd-detail .ems-prd-add-to-cart-inner {
     padding-right: 0; }
+  body.no-size .ems-prd-detail .ems-prd-price .urunDetay_btnSepeteAt > table {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important; }
   .mobile-navigation-animate .ems-page-detail .navigasyon {
     top: 50px; }
   .page-detail-stock-none .ems-prd-detail .ems-prd-price .urunDetay_btnStokHaberci > table {
