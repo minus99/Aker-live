@@ -3121,7 +3121,7 @@ body {
   .btn-effect span {
     font-family: "regular";
     font-size: 14px;
-    color: #171d2f; }
+    color: #000000; }
 
 .btn-single {
   display: inline-block;
@@ -3129,8 +3129,8 @@ body {
   text-align: left; }
   .btn-single span {
     font-family: "regular";
-    font-size: 14px;
-    color: #171d2f; }
+    font-size: 19px;
+    color: #000000; }
 
 @media screen and (min-width: 850px) {
   .mobile-element {
@@ -3142,7 +3142,7 @@ body {
       content: '';
       width: 0;
       height: 1px;
-      background: #171d2f;
+      background: #000000;
       overflow: hidden;
       position: absolute;
       left: 0;
@@ -3928,7 +3928,8 @@ span.checkbox {
       display: inline-block;
       padding: 20px;
       position: relative;
-      cursor: pointer; }
+      cursor: pointer;
+      color: #000; }
   .swiper-container-categories .swiper-slide, .swiper-container-social .swiper-slide {
     width: 16.666%; }
     .swiper-container-categories .swiper-slide > a, .swiper-container-social .swiper-slide > a {
@@ -3945,7 +3946,7 @@ span.checkbox {
         padding-top: 15px;
         line-height: 1;
         font-size: 18px;
-        color: #28354f;
+        color: #000000;
         padding-bottom: 5px;
         position: relative; }
         .swiper-container-categories .swiper-slide .ems-grid-flex-box-text span:after {
@@ -3955,7 +3956,7 @@ span.checkbox {
           left: 0;
           width: 0;
           height: 1px;
-          background: #171d2f;
+          background: #000000;
           transition: all 0.2s ease;
           -webkit-transition: all 0.2s ease;
           -o-transition: all 0.2s ease; }
@@ -4251,7 +4252,7 @@ span.checkbox {
   display: inline-block;
   border-radius: 8px;
   background: transparent;
-  border: 2px solid #171d2f;
+  border: 2px solid #000000;
   transition: all 0.5s ease;
   -webkit-transition: all 0.5s ease;
   -o-transition: all 0.5s ease; }
@@ -4271,16 +4272,16 @@ button.swiper-pagination-bullet {
   cursor: pointer; }
 
 .swiper-pagination-white .swiper-pagination-bullet {
-  background: #171d2f; }
+  background: #000000; }
 
 .swiper-pagination-bullet-active {
-  background: #171d2f; }
+  background: #000000; }
 
 .swiper-pagination-white .swiper-pagination-bullet-active {
-  background: #171d2f; }
+  background: #000000; }
 
 .swiper-pagination-black .swiper-pagination-bullet-active {
-  background: #171d2f; }
+  background: #000000; }
 
 .swiper-container-vertical > .swiper-pagination-bullets {
   right: 10px;
@@ -4661,19 +4662,23 @@ button.swiper-pagination-bullet {
     .swiper-container-default .swiper-slide .swiper-content-inner {
       display: table-cell;
       vertical-align: middle; }
+      .swiper-container-default .swiper-slide .swiper-content-inner h1, .swiper-container-default .swiper-slide .swiper-content-inner h2 {
+        font-family: medium; }
       .swiper-container-default .swiper-slide .swiper-content-inner h1 {
-        font-size: 18px;
-        letter-spacing: 3px; }
+        font-size: 20px;
+        letter-spacing: 2px; }
       .swiper-container-default .swiper-slide .swiper-content-inner h2 {
-        font-size: 48px; }
+        font-size: 50px; }
       .swiper-container-default .swiper-slide .swiper-content-inner .swiper-slide-button span {
+        font-family: medium;
+        font-size: 20px;
         margin-top: 50px;
-        font-size: 16px;
         padding: 10px 0;
-        position: relative; }
+        position: relative;
+        color: #000000; }
         .swiper-container-default .swiper-slide .swiper-content-inner .swiper-slide-button span:before {
           content: '';
-          background: #0d2048;
+          background: #000000;
           position: absolute;
           bottom: 5px;
           left: 0;
@@ -4776,7 +4781,7 @@ button.swiper-pagination-bullet {
   .swiper-container-categories .swiper-title small, .swiper-container-social .swiper-title small {
     font-family: "regular";
     letter-spacing: 2px;
-    color: #0e3d6d;
+    color: #000000;
     font-size: 12px;
     padding-bottom: 10px; }
   .swiper-container-categories .swiper-title span, .swiper-container-social .swiper-title span {
@@ -9381,8 +9386,8 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
     position: absolute;
     top: 50%;
     z-index: 1;
-    min-width: 50%;
-    width: 50%;
+    min-width: 45%;
+    width: 45%;
     padding: 0 10px;
     text-align: center;
     transition: all 666ms cubic-bezier(0.42, 0, 0.58, 1);
@@ -9397,17 +9402,18 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
     transition-delay: 555ms; }
     .ems-grid-banner-text-small span {
       color: #fff;
-      font-family: "regular";
-      font-size: 18px;
-      letter-spacing: 3px; }
+      font-family: "medium";
+      font-size: 20px;
+      letter-spacing: 2px; }
     .ems-grid-banner-text-big span {
-      font-family: "regular";
-      font-size: 60px;
+      font-family: "medium";
+      font-size: 50px;
       color: #fff; }
     .ems-grid-banner-text-button .btn-single {
       margin-top: 30px; }
       .ems-grid-banner-text-button .btn-single span {
-        color: #fff; }
+        font-family: "medium";
+        font-size: 20px; }
         .ems-grid-banner-text-button .btn-single span:before {
           background: #fff; }
   .ems-inline-flex {
@@ -9606,7 +9612,7 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
       line-height: 1;
       font-family: "medium";
       font-size: 24px;
-      color: #28354f; }
+      color: #000000; }
     .ems-grid-banner-text-big {
       padding-top: 5px; }
     .ems-grid-banner-text-button .btn-single {
@@ -15394,7 +15400,7 @@ ul.emosInfinite .ems-prd {
       visibility: visible;
       overflow: visible; } }
 
-.esarp-categorie ul.emosInfinite .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd-group {
+.esarp-categorie ul.emosInfinite .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd-group, .giyim-categorie ul.emosInfinite .ems-prd-group {
   opacity: 0;
   height: auto;
   overflow: visible;
@@ -15403,14 +15409,14 @@ ul.emosInfinite .ems-prd {
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s; }
 
-.esarp-categorie ul.emosInfinite .ems-prd-color-info, .outlet-categorie ul.emosInfinite .ems-prd-color-info {
+.esarp-categorie ul.emosInfinite .ems-prd-color-info, .outlet-categorie ul.emosInfinite .ems-prd-color-info, .giyim-categorie ul.emosInfinite .ems-prd-color-info {
   opacity: 1;
   visibility: visible; }
 
-.esarp-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group {
+.esarp-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group, .outlet-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group, .giyim-categorie ul.emosInfinite .ems-prd:hover .ems-prd-group {
   opacity: 1; }
 
-.esarp-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner, .outlet-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner {
+.esarp-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner, .outlet-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner, .giyim-categorie ul.emosInfinite .ems-prd .ems-prd-group-inner {
   opacity: 1;
   visibility: visible; }
 
@@ -18375,10 +18381,14 @@ ul.emosInfinite .ems-prd {
   .ems-page-default-order-detail .inner-title {
     margin-top: 20px; }
   .ems-page-default-order-detail .ems-grid-order-products {
+    display: -ms-grid;
     display: grid;
+    -ms-grid-columns: 50% 50%;
     grid-template-columns: 50% 50%; }
     .ems-page-default-order-detail .ems-grid-order-products .ems-grid-header {
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 100%;
       grid-template-columns: 100%;
       width: 100%;
       margin-bottom: 20px;
@@ -18386,7 +18396,9 @@ ul.emosInfinite .ems-prd {
       .ems-page-default-order-detail .ems-grid-order-products .ems-grid-header:first-child {
         padding-left: 0;
         padding-right: 0;
+        display: -ms-grid;
         display: grid;
+        -ms-grid-columns: 100%;
         grid-template-columns: 100%;
         width: 100%;
         table-layout: inherit; }
@@ -18434,7 +18446,9 @@ ul.emosInfinite .ems-prd {
         .ems-page-default-order-detail .ems-grid-order-products .ems-grid-header > div:last-child {
           border-bottom: 1px solid #e6e7e9; }
     .ems-page-default-order-detail .ems-grid-order-products .ems-grid-row {
+      display: -ms-grid;
       display: grid;
+      -ms-grid-columns: 100%;
       grid-template-columns: 100%;
       table-layout: inherit;
       width: 100%;

@@ -286,7 +286,7 @@ body { overflow-x: hidden; }
 	span{
 		font-family: $regular;
 		font-size: 14px;
-		color: $lDark;
+		color: #000000;
 	}
 }
 
@@ -296,8 +296,8 @@ body { overflow-x: hidden; }
 	text-align: left;
 	span{
 		font-family: $regular;
-		font-size: 14px;
-		color: $lDark;
+		font-size: 19px;
+		color: #000000;
 	}
 }
 
@@ -315,7 +315,7 @@ body { overflow-x: hidden; }
 				content:'';
 				width: 0;
 				height: 1px;
-				background: $lDark;
+				background: #000000;
 				overflow: hidden;
 				position: absolute;
 				left: 0;
