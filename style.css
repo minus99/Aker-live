@@ -15277,6 +15277,8 @@ ul.emosInfinite .ems-prd {
     left: 0;
     width: 100%;
     height: 100%; }
+    ul.emosInfinite .ems-prd .ems-multiple-img .swiper-slide {
+      width: 100% !important; }
     ul.emosInfinite .ems-prd .ems-multiple-img .swiper-pagination {
       width: -webkit-max-content;
       width: -moz-max-content;

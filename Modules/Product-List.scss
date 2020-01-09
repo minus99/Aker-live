@@ -343,6 +343,9 @@ ul.emosInfinite {
             left: 0;
             width: 100%;
             height: 100%;
+            .swiper-slide{
+                width: 100% !important;
+            }
             .swiper-pagination{
                 width: max-content;
                 left: inherit;
