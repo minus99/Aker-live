@@ -9350,6 +9350,57 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
   display: block;
   position: relative; }
 
+.aker-home-slider {
+  position: relative; }
+  .aker-home-slider:after {
+    content: '';
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 50%;
+    z-index: -1;
+    position: absolute;
+    background-color: #F2DFD6; }
+  .aker-home-slider .swiper-slide {
+    width: 50%; }
+  .aker-home-slider .swiper-slide-cover img {
+    width: 100%;
+    opacity: 0;
+    visibility: hidden; }
+  .aker-home-slider .swiper-button-next i:before,
+  .aker-home-slider .swiper-button-prev i:before {
+    font-weight: bold;
+    color: gray;
+    font-size: 20px; }
+
+.home-desktop-big-text {
+  left: 0;
+  right: 0;
+  z-index: -1;
+  margin-top: 60px;
+  position: absolute;
+  text-align: center; }
+  .home-desktop-big-text span {
+    line-height: 1;
+    font-size: 2rem;
+    color: #F2DFD6;
+    font-weight: 500; }
+
+.home-desktop-slider {
+  margin-top: 30px; }
+  .home-desktop-slider .hm-sldr-title,
+  .home-desktop-slider .hm-slider-sm-title {
+    display: block;
+    text-align: center; }
+  .home-desktop-slider .hm-sldr-title {
+    font-family: "medium";
+    font-size: 24px; }
+  .home-desktop-slider .hm-slider-sm-title {
+    margin-top: 20px;
+    font-size: 18px; }
+  .home-desktop-slider .mb-slider-sm-title {
+    display: none; }
+
 @media screen and (min-width: 850px) {
   .ems-page {
     width: 100%; }
@@ -9596,65 +9647,26 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
   /* ########## EMS004377975845 ########## */
   .hm-cat-mb {
     display: none; }
-  .aker-home-slider {
-    position: relative; }
-    .aker-home-slider .swiper-button-prev {
-      left: 10% !important; }
-      .aker-home-slider .swiper-button-prev i:before {
-        color: gray;
-        font-size: 25px;
-        font-weight: bold; }
-    .aker-home-slider .swiper-button-next {
-      right: 10% !important; }
-      .aker-home-slider .swiper-button-next i:before {
-        color: gray;
-        font-size: 25px;
-        font-weight: bold; }
+  .aker-home-slider .swiper-slide {
+    width: 25%; }
+    .aker-home-slider .swiper-slide .swiper-slide-cover {
+      max-width: 300px;
+      margin: 0 auto; }
+  .aker-home-slider .swiper-button-prev {
+    left: 10% !important; }
+  .aker-home-slider .swiper-button-next {
+    right: 10% !important; }
   .home-desktop-slider {
+    margin-top: 0;
     padding: 60px 0; }
-    .home-desktop-slider .hm-sldr-title {
-      font-size: 3rem;
-      display: -ms-grid;
-      display: grid;
-      font-weight: bold;
-      text-align: center; }
-    .home-desktop-slider .hm-slider-sm-title {
-      text-align: center;
-      display: -ms-grid;
-      display: grid;
-      margin-top: 20px;
-      font-size: 2rem; }
     .home-desktop-slider .mb-slider-sm-title {
       display: none; }
-    .home-desktop-slider .swiper-wrapper .swiper-slide {
-      width: 25%; }
-      .home-desktop-slider .swiper-wrapper .swiper-slide .swiper-slide-cover {
-        max-width: 200px;
-        margin: 0 auto; }
-        .home-desktop-slider .swiper-wrapper .swiper-slide .swiper-slide-cover img {
-          width: 100%;
-          opacity: 0; }
-  .ems-container-full.sortable.aker-home-slider.ems-animated:after {
-    content: '';
-    left: 0;
-    right: 0;
-    bottom: 0;
-    height: 50%;
-    z-index: -1;
-    position: absolute;
-    background-color: #F2DFD6; }
-  .home-desktop-big-text {
-    left: 0;
-    right: 0;
-    z-index: -1;
-    margin-top: 60px;
-    position: absolute;
-    text-align: center; }
-    .home-desktop-big-text span {
-      line-height: 1;
-      font-size: 6rem;
-      color: #F2DFD6;
-      font-weight: 500; } }
+    .home-desktop-slider .hm-sldr-title {
+      font-size: 48px; }
+    .home-desktop-slider .hm-slider-sm-title {
+      font-size: 19px; }
+  .home-desktop-big-text span {
+    font-size: 6rem; } }
 
 @media screen and (max-width: 850px) {
   .ems-grid-banner-cover {
@@ -9753,28 +9765,8 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
       font-weight: bold;
       padding-top: 10px;
       font-size: 18px; }
-  .home-desktop-slider .hm-sldr-title, .home-desktop-slider .hm-slider-sm-title, .home-desktop-slider .home-desktop-big-text {
-    display: none; }
-  .home-desktop-slider .mb-slider-sm-title {
-    background: #ddd;
-    display: -ms-grid;
-    display: grid;
-    text-align: center;
-    padding: 20px 0;
-    font-size: 1.5rem;
-    font-weight: bold; }
   .home-desktop-slider .swiper-container {
-    margin: 20px 0; }
-    .home-desktop-slider .swiper-container .swiper-wrapper .swiper-slide {
-      width: 30%;
-      margin-left: 0px;
-      margin-right: 13px; }
-      .home-desktop-slider .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-cover {
-        max-width: 200px;
-        margin: 0 auto; }
-        .home-desktop-slider .swiper-container .swiper-wrapper .swiper-slide .swiper-slide-cover img {
-          width: 100%;
-          opacity: 0; } }
+    margin: 20px 0; } }
 
 @media screen and (min-width: 850px) {
   .mod-lang {

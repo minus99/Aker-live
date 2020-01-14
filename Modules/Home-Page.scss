@@ -67,6 +67,68 @@
     }
 }
 
+.aker-home-slider {
+    position: relative;
+    &:after {
+        content: '';
+        left: 0;
+        right: 0;
+        bottom: 0;
+        height: 50%;
+        z-index: -1;
+        position: absolute;
+        background-color: #F2DFD6;     
+    }
+    .swiper-slide {
+        width: 50%;
+    }
+    .swiper-slide-cover {
+        img {
+            width: 100%;
+            opacity: 0;
+            visibility: hidden;
+        }
+    }
+    .swiper-button-next i:before,
+    .swiper-button-prev i:before{
+        font-weight: bold;
+        color: gray;
+        font-size: 20px;
+    }
+}
+.home-desktop-big-text {
+    left: 0;
+    right: 0;
+    z-index: -1;
+    margin-top: 60px;
+    position: absolute;
+    text-align: center;
+    span {
+        line-height: 1;
+        font-size: 2rem;
+        color: #F2DFD6;
+        font-weight: 500;
+    }
+}
+.home-desktop-slider {
+    margin-top: 30px;
+    .hm-sldr-title,
+    .hm-slider-sm-title{
+        display: block;
+        text-align: center;
+    }
+    .hm-sldr-title {
+        font-family: "medium";
+        font-size: 24px;
+    }
+    .hm-slider-sm-title {
+        margin-top: 20px;
+        font-size: 18px;
+    }
+    .mb-slider-sm-title{display: none;}
+}
+
+
 @media screen and (min-width: $breakpointXSM){
 
     .ems-page{ width: 100%; }
@@ -354,86 +416,36 @@
     }
 
     .aker-home-slider {
-        position: relative;
+        .swiper-slide {
+            width: 25%;
+            .swiper-slide-cover {
+                max-width: 300px;
+                margin: 0 auto;
+            }
+        }
         .swiper-button-prev {
             left: 10% !important;
-            i {
-                &:before {
-                    color: gray;
-                    font-size: 25px;
-                    font-weight: bold;
-                }
-            }
         }
         .swiper-button-next {
             right: 10% !important;
-            i {
-                &:before {
-                    color: gray;
-                    font-size: 25px;
-                    font-weight: bold;
-                }
-            }
         }
     }
-
     .home-desktop-slider {
+        margin-top: 0;
         padding: 60px 0;
-        .hm-sldr-title {
-            font-size: 3rem;
-            display: grid;
-            font-weight: bold;
-            text-align: center;
-        }
-        .hm-slider-sm-title {
-            text-align: center;
-            display: grid;
-            margin-top: 20px;
-            font-size: 2rem;
-        }
         .mb-slider-sm-title {
             display: none;
         }
-        .swiper-wrapper {
-            .swiper-slide {
-                width: 25%;
-                .swiper-slide-cover {
-                    max-width: 200px;
-                    margin: 0 auto;
-                    img {
-                        width: 100%;
-                        opacity: 0;
-                    }
-                }
-            }
+        .hm-sldr-title {
+            font-size: 48px;
+        }
+        .hm-slider-sm-title {
+            font-size: 19px;
         }
     }
-
-    .ems-container-full.sortable.aker-home-slider.ems-animated {
-        &:after {
-            content: '';
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 50%;
-            z-index: -1;
-            position: absolute;
-            background-color: #F2DFD6;     
-        }
-    }
-
     .home-desktop-big-text {
-        left: 0;
-        right: 0;
-        z-index: -1;
-        margin-top: 60px;
-        position: absolute;
-        text-align: center;
         span {
-            line-height: 1;
             font-size: 6rem;
-            color: #F2DFD6;
-            font-weight: 500;
         }
     }
 
@@ -589,34 +601,8 @@
     }
 
     .home-desktop-slider {
-        .hm-sldr-title, .hm-slider-sm-title, .home-desktop-big-text{
-            display: none;
-        }
-        .mb-slider-sm-title {
-            background: #ddd;
-            display: grid;
-            text-align: center;
-            padding: 20px 0;
-            font-size: 1.5rem;
-            font-weight: bold;
-        }
         .swiper-container {
             margin: 20px 0;
-            .swiper-wrapper {
-                .swiper-slide {
-                    width: 30%;
-                    margin-left: 0px;
-                    margin-right: 13px;
-                    .swiper-slide-cover {
-                        max-width: 200px;
-                        margin: 0 auto;
-                        img {
-                            width: 100%;
-                            opacity: 0;
-                        }
-                    }
-                }
-            }
         }
     }
 }
