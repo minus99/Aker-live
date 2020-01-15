@@ -9650,7 +9650,7 @@ body.ems-login .mbHeader > div.mbMember .mbMemberBtn {
   .aker-home-slider .swiper-slide {
     width: 25%; }
     .aker-home-slider .swiper-slide .swiper-slide-cover {
-      max-width: 300px;
+      max-width: 200px;
       margin: 0 auto; }
   .aker-home-slider .swiper-button-prev {
     left: 10% !important; }
