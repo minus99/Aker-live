@@ -310,15 +310,15 @@
 
 ul.emosInfinite {
     .ems-prd {
-        width: 25%;
-        min-height: 100px;
+        width: 33.333%;
+        min-height: 150px;
         margin-top: 5px;
         padding: 5px 12px;
         &-inner{
             position: relative;
             margin: 0 auto;
             width: 100%;
-            max-width: 310px;
+            max-width: 600px;
         }
         &-mask{
             position: relative;
@@ -752,14 +752,6 @@ ul.emosInfinite {
         }
     }
 }
-.dortlu{
-    ul.emosInfinite {
-        .ems-prd{
-            width: 25%;
-        }
-    }
-}
-
 
 @media screen and (max-width: 1250px){
     body.dortlu{

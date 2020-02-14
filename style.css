@@ -13776,7 +13776,7 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
   .ems-page-detail {
     padding-bottom: 100px; }
   .ems-prd-detail {
-    max-width: 975px;
+    max-width: 1460px;
     margin-left: auto;
     margin-right: auto;
     padding-left: 20px;
@@ -14351,8 +14351,8 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
         margin-top: 0; }
       .ems-prd-zoom > span .swiper-container-detail .swiper-slide a {
         display: block;
-        max-width: 460px;
-        margin: 0 auto 0 0; } }
+        max-width: 800px;
+        margin: 0 auto 0 auto; } }
   .ems-prd-zoom > span .swiper-container-detail .swiper-slide .mobile-play-button {
     display: none; }
   .ems-prd-zoom > span .swiper-container-detail .swiper-slide .mousetrap {
@@ -14370,9 +14370,6 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
 
 .esarp-categorie .urunDetay .ems-prd-size {
   display: none; }
-
-.esarp-categorie .ems-prd-detail .ems-prd-flex-controller > div.ems-prd-brandW.show {
-  /*display: none;*/ }
 
 .esarp-categorie .no-size .store-stock-pp .store-stock-inner .drp-con {
   display: none; }
@@ -15239,15 +15236,15 @@ body.ems-login.mini-login-ready .mod-mini-login-body .sub.login {
     display: none; } }
 
 ul.emosInfinite .ems-prd {
-  width: 25%;
-  min-height: 100px;
+  width: 33.333%;
+  min-height: 150px;
   margin-top: 5px;
   padding: 5px 12px; }
   ul.emosInfinite .ems-prd-inner {
     position: relative;
     margin: 0 auto;
     width: 100%;
-    max-width: 310px; }
+    max-width: 600px; }
   ul.emosInfinite .ems-prd-mask {
     position: relative; }
   ul.emosInfinite .ems-prd-new {
@@ -15597,9 +15594,6 @@ ul.emosInfinite .ems-prd {
 
 .uclu ul.emosInfinite .ems-prd {
   width: 33.333%; }
-
-.dortlu ul.emosInfinite .ems-prd {
-  width: 25%; }
 
 @media screen and (max-width: 1250px) {
   body.dortlu ul.emosInfinite .ems-prd {
