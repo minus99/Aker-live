@@ -775,27 +775,34 @@
                     position: relative; 
                     input { 
                         width: 100% !important; 
-                        padding-right: 45px;
+                        padding-right: 100px;
                     }
                     table { 
                         position: absolute; 
-                        right: 0; 
-                        top: 7px; 
+                        right: 10px; 
+                        top: 10px; 
                         font-family: $bold; 
                         font-size: 15px;
                         width: auto;
                         a.btnHediyeCekiKullan { 
                             display: block; 
-                            padding: 12px; 
+                            background: #171d2f;
+                            padding: 10px; 
                             line-height: 1; 
                             font-family: inherit; 
                             font-size: inherit; 
-                            color: $inputborder;  
+                            color: #ffffff;  
                             i, i:before {  
                                 font-size: 14px; 
                             }
                             i:before{
                                 color: $lDark;
+                            }
+                            span{
+                                font-size: 12px;
+                            }
+                            &:hover{
+                                background: #06c0d9;
                             }
                         } 
                     }

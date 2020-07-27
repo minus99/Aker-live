@@ -180,6 +180,10 @@
                     }
                 }
             }
+
+            .promosyonBilgi>span{
+                font-size: 14px;
+            }
         }
 
         &-list-search{
@@ -326,6 +330,7 @@ ul.emosInfinite {
         &-new{
             height: 20px;
             min-height:20px;
+            line-height: 20px;
             .urunListe_yeniUrun{
                 display: block !important;
                 span{
@@ -387,9 +392,9 @@ ul.emosInfinite {
                     padding: 5px;
                     background: #fff;
                     span, small{
-                        color: $red;
-                        font-size: 16px;
                         font-family: $medium;
+                        font-size: 14px;
+                        color: #ff6a6f;
                     }
                 }
             }
@@ -449,8 +454,8 @@ ul.emosInfinite {
             padding: 10px 5px 0 5px;
             &-mask{
                 overflow: hidden;
-                min-height: 105px;
-                max-height: 105px;
+                min-height: 145px;
+                max-height: 145px;
                 text-align: center;
             }    
         }
@@ -603,6 +608,21 @@ ul.emosInfinite {
         }
         &-add-cart{
             display: none;
+
+            .urunListe_adet,
+            .ems-prd-combine-size{display: none;}
+        }
+        &-add-view{
+            display: none;
+            > a{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: #00d3e7;
+                padding: 5px 0;
+                font-family: "medium";
+                text-decoration: underline;
+            }
         }
         &.no-color{
             .ems-prd-color-info{opacity: 0; visibility: hidden;}
@@ -615,6 +635,30 @@ ul.emosInfinite {
                     overflow: visible;
                 }
             }
+        }
+    }
+}
+
+.promosyonBilgi {
+    > span{
+        &:not(.emos_invisible){
+            display: block;
+        }
+        &:empty{display: none;}
+        font-size: 14px;
+        font-family: $medium;
+        letter-spacing: .5px;
+        color: #ff6a6f;
+        margin-top: 10px;
+        font-weight: 600;
+    }
+}
+
+.ems-prd-detail{
+    .promosyonBilgi {
+        > span{
+            margin-top: 5px;
+            color: #ff374a;
         }
     }
 }
@@ -695,15 +739,14 @@ ul.emosInfinite {
     background:url(#{$baseHref + "/Upload/BANNERS/covers/404-cover.jpg"}) no-repeat;
     background-size: cover;
     background-position: top left;
-    padding-top: 100px;
+    padding-top: 110px;
     padding-bottom: 50px;
-    height: calc(100% - 100px);
     .page-empty{
         .product-empty{
             > .ems-container-full {
                 max-width: 1000px;
                 position: relative;
-                margin: 100px auto 100px auto;
+                margin: 0 auto;
                 width: 100%;
                 text-align: right;
             }
@@ -712,7 +755,7 @@ ul.emosInfinite {
                 width: 100%;
                 text-align: center;
                 background: #fff;
-                padding: 35px 0;
+                padding: 20px 0;
                 top: 0;
                 left: 0;
                 z-index: 5;
@@ -725,13 +768,13 @@ ul.emosInfinite {
                 padding-left: 20px;
                 .title-bold{
                     font-family: $medium;
-                    font-size: 200px;
+                    font-size: 100px;
                     text-indent: -10px;
                 }
                 .title{
                     margin-top: 10px;
                     font-family: $medium;
-                    font-size: 36px;
+                    font-size: 26px;
                 }
                 .link{
                     .btnDefault {
@@ -968,6 +1011,9 @@ ul.emosInfinite {
                     padding:30px 20px;
                 }
             }
+            .promosyonBilgi>span{
+                font-size: 12px;
+            }
         }
     }
 
@@ -1009,6 +1055,15 @@ ul.emosInfinite {
         .ems-prd{
             padding:0 5px;
             width: 50%;
+            &-icons{
+                > div{
+                    .urunListe_pnlIndirimOran{
+                        span, small{
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
             &-content{
                 padding: 5px 0 0 0;
             }
@@ -1023,11 +1078,16 @@ ul.emosInfinite {
             &-group{ display:none !important; }
         }
     }
+    .ems-prd-detail{
+        .promosyonBilgi {
+            > span{
+                padding:0 0 0 15px;
+            }
+        }
+    }
 
     .ems-page-404{
         padding-top: 50px;
-        padding-bottom: 0;
-        height: calc(100% - 50px);
         .page-empty{
             padding-left: 0;
             .product-empty{
@@ -1049,10 +1109,10 @@ ul.emosInfinite {
                     padding-left: 0;
                     padding-right: 0;
                     .title-bold{
-                        font-size: 170px;
+                        font-size: 100px;
                     }
                     .title{
-                        font-size: 18px;
+                        font-size: 15px;
                     }
                     .link{
                         .btnDefault {

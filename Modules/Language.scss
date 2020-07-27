@@ -84,6 +84,14 @@
             }
         }    
     }
+    /*
+        Global Country Select
+    */
+    .dropdown-glb{
+        .sub{
+            min-width: 200px;
+        }
+    }
 }
 
 .mod-lang {
@@ -93,6 +101,52 @@
 }
 
 .vailLang{z-index: 5; transition: none;}
+
+/*
+Global Country Select
+*/
+.dropdown-glb{
+    .dropdown-header{
+        display: block;
+        border: none;
+        i{
+            margin-left: 15px;
+            font-size: 13px;
+            vertical-align: middle;
+        }
+    }
+    .sub{
+        position: absolute;
+        top: 80px;
+        right: 0;
+        background: #fff;
+        padding: 10px 15px;
+        li{
+            a{
+                display: block;
+                padding:7px 10px;
+                span{
+                    font-size: 14px;
+                    font-family: $regular;
+                }
+            }
+            i{
+                margin-right: 8px;
+            }
+            &.selected{
+                a span{
+                    font-family: $medium;
+                    text-decoration: underline;
+                }
+            }
+        }
+    }
+    &.opened{
+        .sub{
+            display: block;
+        }
+    }
+}
 
 @media only screen and (min-width: 850px) and ( max-width: 1200px) {
     .mod-lang .dropdown > span{padding-left: 10px; padding-right: 10px;}
@@ -184,6 +238,41 @@
             }
         }
     }
+
+    
+/*
+Global Country Select
+*/
+.dropdown-glb{
+    .dropdown-header{
+        color: #fff;
+        background: none;
+        height: 37px;
+        line-height: 27px;
+        i{
+            margin-left: 15px;
+            font-size: 13px;
+        }
+    }
+    .sub{
+        top: 54px;
+        left: 0;
+        right: inherit;
+        width: 100%;
+        z-index: 15;
+    }
+    .vailCountry{
+        top: inherit;
+        bottom: 0;
+        height: calc(100% - 55px);
+    }
+    &.opened{
+        .vailCountry{
+            visibility: visible;
+            opacity: .5;
+        }
+    }
+}
 
     .mobile-lang-popup{
         .vailLang {opacity: .7; visibility: visible;}

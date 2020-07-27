@@ -43,6 +43,7 @@
                         position: inherit;
                         .ems-cell-3{
                             @include flex();
+                            align-items: center;
                             justify-content: flex-end;
                         }
                         &.ems-col-1{ width:10%; padding-right: 0; }
